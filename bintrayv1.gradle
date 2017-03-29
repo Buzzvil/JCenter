@@ -41,6 +41,9 @@ bintray {
     pkg {
         repo = bintrayRepo
         name = bintrayName
+        if (bintrayUserOrg != null) {
+            userOrg = bintrayUserOrg
+        }
         desc = libraryDescription
         websiteUrl = siteUrl
         vcsUrl = gitUrl
